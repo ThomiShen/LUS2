@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+    {% if selected_gender %}
+  <div class="mdui-container">
+    <div class="mdui-row">
+      <div class="mdui-col-sm-12 mdui-col-md-12">
+        <div class="mdui-card">
+          <!-- Image and Text Row -->
+          <div class="mdui-row">
+            <!-- Image Column -->
+            <div class="mdui-col-sm-4 mdui-col-md-4">
+              <img class="mdui-img-fluid" src="{{selected_image}}"/>
+            </div>
+            <!-- Text Column -->
+            <div class="mdui-col-sm-8 mdui-col-md-8 mdui-p-t-5 mdui-p-l-5">
+<!--              <div class="mdui-typo-title">大帅哥</div>-->
+                <div class="mdui-typo-body"></div>
+                <div class="mdui-typo-body"></div>
+                <div class="mdui-typo-title">{{selected_name}}</div>
+              <div class="mdui-typo-body">性别：{{selected_gender}}</div>
+              <div class="mdui-typo-body">年龄：{{selected_age}}</div>
+                <div class="mdui-typo-body">职业：{{selected_job}}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    {% else %}
+        <p>您还没有选择性别。</p>
+    {% endif %}
+{% endblock %}

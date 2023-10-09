@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block page_content %}
+    <div class="mdui-container mt-4">
+        <div class="mdui-row">
+            <div class="mdui-col-md-6 mdui-col-offset-md-3">
+                <div class="mdui-card">
+                    <div class="mdui-card-media">
+                        <img src="{{ url_for('static', filename='uploads/图灵.jpeg') }}" alt="About Us Banner">
+                        <div class="mdui-card-media-covered">
+                            <div class="mdui-card-primary">
+                                <div class="mdui-card-primary-title">关于我们</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdui-card-content">
+                        <p>我们是Love Upload System，专注于为您打造最优质的恋爱管理体验。</p>
+                        <p>无论是音乐推荐还是情感分析，我们都为您提供了全方位的服务，助您深入洞察并优化您的恋爱旅程。</p>
+                        <p>我们的团队由一批对技术和恋爱都充满热情的年轻人组成，我们坚信，技术能够为恋爱带来前所未有的美好体验。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
